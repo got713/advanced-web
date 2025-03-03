@@ -1,0 +1,43 @@
+<?php
+//exercice 1
+$x = 10;
+$y = 7;
+
+echo "$x + $y = " . ($x + $y) . "<br>";
+echo "$x - $y = " . ($x - $y) . "<br>";
+echo "$x * $y = " . ($x * $y) . "<br>";
+echo "$x / $y = " . ($x / $y) . "<br>";
+echo "$x % $y = " . ($x % $y) . "<br>";
+//***/***/***/***/***/***/***/***/***/
+//exercice 2
+$currentMonth = date('F', time());
+
+if ($currentMonth == 'August') {
+    echo "It's August, so it's really hot.";
+} else {
+    echo "Not August, so at least not in the peak of the heat.";
+
+}
+
+//***/***/***/***/***/***/***/***/***/
+//exercice 3
+for ($i = 1; $i <= 12; $i++) {
+    $square = $i * $i;
+    echo "$i * $i = $square<br>";
+}
+//***/***/***/***/***/***/***/***/***/
+//exercice 4
+echo "<table border='1'>";
+
+for ($i = 1; $i <= 7; $i++) {
+    echo "<tr>"; 
+
+    for ($j = 1; $j <= 7; $j++) {
+        echo "<td>" . $i * $j . "</td>"; 
+    }
+
+    echo "</tr>"; 
+}
+
+echo "</table>"; 
+?>
